@@ -235,7 +235,7 @@ export default {
           projectMobileImage: "rampedia-mob.jpg",
           color: "var(--react-color)",
           category: "react",
-          technologyImg: "css.png",
+          technologyImg: "react.png",
           techUsed: [
             {
               name: "React",
@@ -364,7 +364,7 @@ export default {
           projectMobileImage: "weather-app-react-mob.jpg",
           color: "var(--react-color)",
           category: "react",
-          technologyImg: "css.png",
+          technologyImg: "react.png",
           techUsed: [
             {
               name: "React",
@@ -418,7 +418,7 @@ export default {
           projectMobileImage: "exer-app-mob.jpg",
           color: "var(--react-color)",
           category: "react",
-          technologyImg: "css.png",
+          technologyImg: "react.png",
           techUsed: [
             {
               name: "React",
@@ -494,7 +494,7 @@ export default {
         },
         {
           name: "Task List",
-          description: "Web App created with Vue",
+          description: "Web App created with Vue, Local Storage",
           link: "https://andyalu.github.io/task-list-vue/",
           githubLink: "https://github.com/andyalu/task-list-vue",
           projectImage: "task-list.jpg",
