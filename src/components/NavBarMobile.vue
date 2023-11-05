@@ -2,11 +2,7 @@
   <div class="navbar mobile" @click="closeMenu">
     <div class="navbar-content" @click.stop>
       <button class="btn menu-close-btn" @click="closeMenu">
-        <img
-          src="../assets/img/icons/toleft.png"
-          class="call-btn-img"
-          alt="close menu"
-        />
+        <i class="bi bi-x-lg"></i>
       </button>
       <div class="navbar-intro">
         <div class="navbar-intro-avatar"></div>
@@ -20,14 +16,7 @@
           :to="navlink.link"
           @click="closeMenu"
         >
-          <img
-            :src="require('../assets/img/icons/' + navlink.img)"
-            class="navlink-icon-mob"
-            width="18"
-            height="18"
-            :alt="navlink.name"
-            loading="lazy"
-          />
+          <i :class="navlink.img" :style="navlink.color"></i>
           <span class="navlink-text" :style="navlink.color">{{
             navlink.name
           }}</span>
@@ -53,25 +42,25 @@ export default {
           name: "Home",
           link: "/",
           color: "color:var(--home-color)",
-          img: "homepage.png",
+          img: "bi bi-house-door",
         },
         {
           name: "About",
           link: "/about",
           color: "color:var(--about-color)",
-          img: "info.png",
+          img: "bi bi-info-circle",
         },
         {
           name: "Projects",
           link: "/projects",
           color: "color:var(--projects-color)",
-          img: "coding.png",
+          img: "bi bi-code-slash",
         },
         {
           name: "Contact",
           link: "/contact",
           color: "color:var(--contact-color)",
-          img: "chat.png",
+          img: "bi bi-chat-left-dots",
         },
       ],
     };
@@ -116,7 +105,8 @@ export default {
   .navbar.mobile .nav-menu a {
     justify-content: flex-start;
   }
-  .navlink-icon-mob {
+  .navbar.mobile .nav-menu a i {
+    font-size: 18px;
     margin-right: 1rem;
   }
   .navbar.mobile .navlink-text {

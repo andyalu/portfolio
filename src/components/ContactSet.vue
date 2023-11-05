@@ -7,14 +7,8 @@
       :key="contact.name"
       target="_blank"
     >
-      <img
-        :src="require('../assets/img/icons/' + contact.img)"
-        width="20"
-        height="20"
-        :alt="contact.name"
-        loading="lazy"
-      />
-      {{ contact.text }}
+      <i :class="contact.img"></i>
+      <span>{{ contact.text }}</span>
     </a>
   </div>
 </template>
@@ -28,32 +22,44 @@ export default {
         {
           name: "location",
           text: "Long Melford, Sudbury, UK",
-          img: "location.png",
+          img: "bi bi-geo-alt",
           link: "https://www.google.com/maps/place/Long+Melford,+Sudbury/@52.0793216,0.7013253,14z/data=!3m1!4b1!4m6!3m5!1s0x47d8545f1342987b:0x5c8bb4fd479aa9a3!8m2!3d52.074356!4d0.71633!16zL20vMDg3Z2Rf?entry=ttu",
         },
         {
-          name: "telegram",
-          text: "@andyalu",
-          img: "telegram.png",
-          link: "https://telegram.me/andyalu",
+          name: "whatsapp",
+          text: "WhatsApp",
+          img: "bi bi-whatsapp",
+          link: "https://wa.me/+380632117272",
         },
         {
           name: "email",
           text: "yalunin077@gmail.com",
-          img: "email.png",
+          img: "bi bi-envelope",
           link: "mailto:yalunin077@gmail.com",
         },
         {
           name: "phone",
           text: "+447798501078",
-          img: "phone.png",
+          img: "bi bi-telephone",
           link: "tel:+447798501078",
         },
         {
           name: "github",
           text: "github.com/andyalu",
-          img: "github.png",
+          img: "bi bi-github",
           link: "https://github.com/andyalu",
+        },
+        {
+          name: "linkedin",
+          text: "LikedIn",
+          img: "bi bi-linkedin",
+          link: "https://www.linkedin.com/in/andrew-yalunin-1859651a5/",
+        },
+        {
+          name: "telegram",
+          text: "@andyalu",
+          img: "bi bi-telegram",
+          link: "https://telegram.me/andyalu",
         },
       ],
     };
@@ -68,7 +74,7 @@ export default {
 .contact-item {
   display: flex;
   align-items: center;
-  padding: 1.6rem;
+  padding: 0.8rem 1.6rem;
   border: 1px solid hsla(0, 0%, 100%, 0.2);
   background-color: var(--main-bg-color);
   backdrop-filter: blur(5px);
@@ -82,10 +88,10 @@ export default {
   background-color: var(--contact-item-hover-bg);
   border: var(--box-border);
 }
-.contact-item img {
-  margin-right: 1.5rem;
+.contact-item i {
+  margin-right: 1.2rem;
+  font-size: 20px;
   height: auto;
-  filter: drop-shadow(var(--regular-text-shadow));
 }
 @media (max-width: 600px) {
   .contact-item {

@@ -11,14 +11,7 @@
         :key="navlink.link"
         :to="navlink.link"
       >
-        <img
-          :src="require('../assets/img/icons/' + navlink.img)"
-          width="20"
-          height="20"
-          class="navlink-icon"
-          :alt="navlink.name"
-          loading="lazy"
-        />
+        <i :class="navlink.img" :style="navlink.color"></i>
         <span class="navlink-text" :style="navlink.color">{{
           navlink.name
         }}</span>
@@ -47,25 +40,25 @@ export default {
           name: "Home",
           link: "/",
           color: "color:var(--home-color)",
-          img: "homepage.png",
+          img: "bi bi-house-door",
         },
         {
           name: "About",
           link: "/about",
           color: "color:var(--about-color)",
-          img: "info.png",
+          img: "bi bi-info-circle",
         },
         {
           name: "Projects",
           link: "/projects",
           color: "color:var(--projects-color)",
-          img: "coding.png",
+          img: "bi bi-code-slash",
         },
         {
           name: "Contact",
           link: "/contact",
           color: "color:var(--contact-color)",
-          img: "chat.png",
+          img: "bi bi-chat-left-dots",
         },
       ],
     };
@@ -175,7 +168,7 @@ export default {
 .nav-menu a.link-contact {
   color: var(--contact-color);
 }
-.nav-menu a .navlink-icon {
+.nav-menu a i {
   margin-right: 1rem;
   filter: drop-shadow(var(--regular-text-shadow));
   transition: all ease 0.2s;
@@ -193,7 +186,7 @@ export default {
   border: var(--box-border);
   transition: all ease 0.4s;
 }
-.nav-menu a:hover .navlink-icon {
+.nav-menu a:hover i {
   transform: translateX(-4rem);
   opacity: 0;
 }
@@ -215,11 +208,11 @@ export default {
   .nav-menu a {
     justify-content: center;
   }
-  .nav-menu a:hover .navlink-icon {
+  .nav-menu a:hover i {
     transform: translateX(0);
     opacity: 1;
   }
-  .nav-menu a .navlink-icon {
+  .nav-menu a i {
     margin-right: 0;
   }
   .arrow-right-figure {

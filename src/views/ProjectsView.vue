@@ -77,20 +77,10 @@
             />
             <div class="links-set">
               <a :href="project.githubLink" target="_blank" title="GitHub Code">
-                <img
-                  src="../assets/img/icons/github.png"
-                  width="24"
-                  height="24"
-                  alt="GitHub Link"
-                />
+                <i class="bi bi-github"></i>
               </a>
               <a :href="project.link" target="_blank" title="Demo">
-                <img
-                  src="../assets/img/icons/foreign.png"
-                  width="24"
-                  height="24"
-                  alt="Demo Link"
-                />
+                <i class="bi bi-box-arrow-up-right"></i>
               </a>
             </div>
           </div>
@@ -751,6 +741,9 @@ export default {
 .links-set a {
   display: inline-block;
   margin-left: 0.8rem;
+}
+.links-set a i {
+  font-size: 24px;
 }
 
 .project:hover {

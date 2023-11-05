@@ -164,11 +164,6 @@ export default {
           img: "dou.png",
         },
         {
-          name: "habr.com",
-          link: "https://habr.com/",
-          img: "habr.png",
-        },
-        {
           name: "dev.to",
           link: "https://dev.to/",
           img: "dev.webp",
@@ -226,7 +221,7 @@ export default {
   margin-right: 0.5rem;
 }
 .stack-img {
-  width: 3.8rem !important;
+  width: 3.2rem !important;
   height: auto !important;
   margin-right: 0 !important;
 }
@@ -251,6 +246,13 @@ export default {
   max-width: 380px;
   border-radius: 100px;
   border: var(--box-border);
+}
+@media (max-width: 1199px) {
+  .stack-img {
+    width: 2.4rem !important;
+    height: auto !important;
+    margin-right: 0 !important;
+  }
 }
 @media (max-width: 350px) {
   .resources-item-link {
