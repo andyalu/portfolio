@@ -246,6 +246,31 @@ export default {
           ],
         },
         {
+          name: "Task List",
+          description: "Web App created with Vue, Local Storage",
+          link: "https://andyalu.github.io/task-list-vue/",
+          githubLink: "https://github.com/andyalu/task-list-vue",
+          projectImage: "task-list.jpg",
+          projectMobileImage: "task-list-mob.jpg",
+          color: "var(--vue-color)",
+          category: "vue",
+          technologyImg: "vue.png",
+          techUsed: [
+            {
+              name: "Vue",
+              icon: "vue.png",
+            },
+            {
+              name: "html",
+              icon: "html-5.png",
+            },
+            {
+              name: "css",
+              icon: "css.png",
+            },
+          ],
+        },
+        {
           name: "Quiz App JS",
           description: "Web App created with JavaScript",
           link: "https://andyalu.github.io/quiz-app-js/",
@@ -292,6 +317,27 @@ export default {
             {
               name: "js",
               icon: "javascript.png",
+            },
+          ],
+        },
+        {
+          name: "Tic Tac Toe",
+          description: "Web Game created with Vue, Tailwind CSS",
+          link: "https://andyalu.github.io/tic-tac-toe/",
+          githubLink: "https://github.com/andyalu/tic-tac-toe",
+          projectImage: "tic-tac-toe.jpg",
+          projectMobileImage: "tic-tac-toe-mob.jpg",
+          color: "var(--vue-color)",
+          category: "vue",
+          technologyImg: "vue.png",
+          techUsed: [
+            {
+              name: "Vue",
+              icon: "vue.png",
+            },
+            {
+              name: "Tailwind CSS",
+              icon: "tailwind.png",
             },
           ],
         },
@@ -479,31 +525,6 @@ export default {
             {
               name: "splide js",
               icon: "splide.svg",
-            },
-          ],
-        },
-        {
-          name: "Task List",
-          description: "Web App created with Vue, Local Storage",
-          link: "https://andyalu.github.io/task-list-vue/",
-          githubLink: "https://github.com/andyalu/task-list-vue",
-          projectImage: "task-list.jpg",
-          projectMobileImage: "task-list-mob.jpg",
-          color: "var(--vue-color)",
-          category: "vue",
-          technologyImg: "vue.png",
-          techUsed: [
-            {
-              name: "Vue",
-              icon: "vue.png",
-            },
-            {
-              name: "html",
-              icon: "html-5.png",
-            },
-            {
-              name: "css",
-              icon: "css.png",
             },
           ],
         },
