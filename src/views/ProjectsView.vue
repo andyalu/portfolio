@@ -163,6 +163,31 @@ export default {
           ],
         },
         {
+          name: "C-Market",
+          description: "Online Shop Template created with Vue 3, Pinia",
+          link: "https://andyalu.github.io/c-market/",
+          githubLink: "https://github.com/andyalu/c-market",
+          projectImage: "c-market.jpg",
+          projectMobileImage: "c-market-mob.jpg",
+          color: "var(--vue-color)",
+          category: "vue",
+          technologyImg: "vue.png",
+          techUsed: [
+            {
+              name: "Vue",
+              icon: "vue.png",
+            },
+            {
+              name: "Pinia",
+              icon: "pinia.png",
+            },
+            {
+              name: "REST API",
+              icon: "rest.png",
+            },
+          ],
+        },
+        {
           name: "Avex AI",
           description: "Landing Page",
           link: "https://andyalu.github.io/avex-ai/",
@@ -232,12 +257,8 @@ export default {
               icon: "react.png",
             },
             {
-              name: "html",
-              icon: "html-5.png",
-            },
-            {
-              name: "css",
-              icon: "css.png",
+              name: "Boostrap",
+              icon: "bootstrap.png",
             },
             {
               name: "Rest API",
