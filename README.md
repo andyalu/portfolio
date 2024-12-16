@@ -6,7 +6,7 @@ Portfolio implemented as a Single Page Application made with Vue JS.
 
 The UI was also designed by myself.
 
-[Demo](https://andyalu.github.io/portfolio/)
+[Demo](https://yalu.tech/portfolio/)
 
 ## Project setup
 
